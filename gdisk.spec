@@ -1,3 +1,5 @@
+%define	debug_package %{nil}
+
 Name:		gdisk
 Version:	0.8.6
 Release:	1
