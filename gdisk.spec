@@ -1,15 +1,15 @@
 %define	debug_package %{nil}
 
+Summary:	An fdisk-like partitioning tool for GPT disks
 Name:		gdisk
 Version:	0.8.6
 Release:	1
-Summary:	An fdisk-like partitioning tool for GPT disks
 License:	GPLv2
 Group:		System/Configuration/Hardware
 Url:		http://www.rodsbooks.com/gdisk
 Source0:	http://www.rodsbooks.com/%{name}/gptfdisk-%{version}.tar.gz
 
-BuildRequires:	icu-devel
+BuildRequires:	pkgconfig(icu-io)
 BuildRequires:	pkgconfig(ncurses)
 Buildrequires:	pkgconfig(popt)
 Buildrequires:	pkgconfig(uuid)
