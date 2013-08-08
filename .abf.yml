@@ -1,2 +1,4 @@
+removed_sources:
+  gptfdisk-0.8.1.tar.gz: 3285608c8c3087040d3bec9db1b287fae3cfc4c1
 sources:
-  "gptfdisk-0.8.1.tar.gz": 3285608c8c3087040d3bec9db1b287fae3cfc4c1
+  gptfdisk-0.8.7.tar.gz: a134cdf28d0130bc0d3e459c0098b9109d9d3fb6
