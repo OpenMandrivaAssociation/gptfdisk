@@ -3,7 +3,7 @@
 Summary:	An fdisk-like partitioning tool for GPT disks
 Name:		gdisk
 Version:	0.8.7
-Release:	2
+Release:	3
 License:	GPLv2
 Group:		System/Configuration/Hardware
 Url:		http://www.rodsbooks.com/gdisk
