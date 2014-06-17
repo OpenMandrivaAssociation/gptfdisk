@@ -7,6 +7,7 @@ Group:		System/Configuration/Hardware
 Url:		http://www.rodsbooks.com/gdisk
 Source0:	http://www.rodsbooks.com/%{name}/gptfdisk-%{version}.tar.gz
 BuildRequires:	pkgconfig(icu-io)
+BuildRequires:	pkgconfig(ncurses)
 BuildRequires:	pkgconfig(ncursesw)
 Buildrequires:	pkgconfig(popt)
 Buildrequires:	pkgconfig(uuid)
