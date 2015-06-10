@@ -34,12 +34,18 @@ and the ability to convert MBR disks to GPT format.
 %install
 mkdir -p %{buildroot}%{_sbindir}
 install -Dp -m0755 gdisk %{buildroot}%{_sbindir}
+install -Dp -m0755 cgdisk %{buildroot}%{_sbindir}
 install -Dp -m0755 sgdisk %{buildroot}%{_sbindir}
+install -Dp -m0755 fixparts %{buildroot}%{_sbindir}
 install -Dp -m0644 gdisk.8 %{buildroot}%{_mandir}/man8/gdisk.8
-install -Dp -m0644 sgdisk.8 %{buildroot}%{_mandir}/man8/sgdisk.8
+install -Dp -m0644 cgdisk.8 %{buildroot}%{_mandir}/man8/sgdisk.8
+install -Dp -m0644 sgdisk.8 %{buildroot}%{_mandir}/man8/cgdisk.8
+install -Dp -m0644 fixparts.8 %{buildroot}%{_mandir}/man8/fixparts.8
 
 %files
 %doc NEWS COPYING README
 %{_sbindir}/gdisk
+%{_sbindir}/cgdisk
 %{_sbindir}/sgdisk
+%{_sbindir}/fixparts
 %doc %{_mandir}/man8/*
