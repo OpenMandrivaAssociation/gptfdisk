@@ -1,7 +1,7 @@
 Summary:	An fdisk-like partitioning tool for GPT disks
 Name:		gptfdisk
-Version:	1.0.0
-Release:	0.2
+Version:	1.0.1
+Release:	0.1
 License:	GPLv2+
 Group:		System/Configuration/Hardware
 Url:		http://www.rodsbooks.com/gdisk
@@ -11,6 +11,7 @@ BuildRequires:	pkgconfig(ncurses)
 BuildRequires:	pkgconfig(ncursesw)
 BuildRequires:	pkgconfig(popt)
 BuildRequires:	pkgconfig(uuid)
+Provides:		gdisk = %{EVRD}
 Provides:		gdisk = 1.0.0
 Obsoletes:		gdisk < 1.0.0
 
