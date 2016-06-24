@@ -1,7 +1,7 @@
 Summary:	An fdisk-like partitioning tool for GPT disks
 Name:		gptfdisk
 Version:	1.0.1
-Release:	2
+Release:	3
 License:	GPLv2+
 Group:		System/Configuration/Hardware
 Url:		http://www.rodsbooks.com/gdisk
@@ -21,8 +21,6 @@ fdisk features a command-line interface, fairly direct
 manipulation of partition table structures, recovery
 tools to help you deal with corrupt partition tables,
 and the ability to convert MBR disks to GPT format.
-
-
 
 #----------------------------------------------------------------------------
 
