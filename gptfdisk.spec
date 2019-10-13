@@ -1,7 +1,7 @@
 Summary:	An fdisk-like partitioning tool for GPT disks
 Name:		gptfdisk
 Version:	1.0.4
-Release:	2
+Release:	3
 License:	GPLv2+
 Group:		System/Configuration/Hardware
 Url:		http://www.rodsbooks.com/gdisk
@@ -25,11 +25,11 @@ and the ability to convert MBR disks to GPT format.
 #----------------------------------------------------------------------------
 
 %prep
-%setup -qn gptfdisk-%{version}
+%autosetup -n gptfdisk-%{version} -p1
 
 %build
 %setup_compile_flags
-%make CC=%{__cc} CXX=%{__cxx}
+%make_build CC=%{__cc} CXX=%{__cxx}
 
 %install
 mkdir -p %{buildroot}%{_sbindir}
