@@ -1,7 +1,7 @@
 Summary:	An fdisk-like partitioning tool for GPT disks
 Name:		gptfdisk
-Version:	1.0.4
-Release:	3
+Version:	1.0.5
+Release:	1
 License:	GPLv2+
 Group:		System/Configuration/Hardware
 Url:		http://www.rodsbooks.com/gdisk
