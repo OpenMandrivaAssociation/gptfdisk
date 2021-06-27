@@ -1,6 +1,6 @@
 Summary:	An fdisk-like partitioning tool for GPT disks
 Name:		gptfdisk
-Version:	1.0.7
+Version:	1.0.8
 Release:	1
 License:	GPLv2+
 Group:		System/Configuration/Hardware
@@ -28,19 +28,14 @@ and the ability to convert MBR disks to GPT format.
 %autosetup -n gptfdisk-%{version} -p1
 
 %build
-%setup_compile_flags
+%set_build_flags
 %make_build CC=%{__cc} CXX=%{__cxx}
 
 %install
-mkdir -p %{buildroot}%{_sbindir}
-install -Dp -m0755 gdisk %{buildroot}%{_sbindir}
-install -Dp -m0755 cgdisk %{buildroot}%{_sbindir}
-install -Dp -m0755 sgdisk %{buildroot}%{_sbindir}
-install -Dp -m0755 fixparts %{buildroot}%{_sbindir}
-install -Dp -m0644 gdisk.8 %{buildroot}%{_mandir}/man8/gdisk.8
-install -Dp -m0644 cgdisk.8 %{buildroot}%{_mandir}/man8/sgdisk.8
-install -Dp -m0644 sgdisk.8 %{buildroot}%{_mandir}/man8/cgdisk.8
-install -Dp -m0644 fixparts.8 %{buildroot}%{_mandir}/man8/fixparts.8
+for f in gdisk sgdisk cgdisk fixparts ; do 
+    install -D -p -m 0755 $f %{buildroot}%{_sbindir}/$f
+    install -D -p -m 0644 $f.8 %{buildroot}%{_mandir}/man8/$f.8
+done
 
 %files
 %doc NEWS COPYING README
