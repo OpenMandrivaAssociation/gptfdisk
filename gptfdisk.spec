@@ -1,6 +1,6 @@
 Summary:	An fdisk-like partitioning tool for GPT disks
 Name:		gptfdisk
-Version:	1.0.8
+Version:	1.0.9
 Release:	1
 License:	GPLv2+
 Group:		System/Configuration/Hardware
