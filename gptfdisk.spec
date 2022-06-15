@@ -1,18 +1,19 @@
 Summary:	An fdisk-like partitioning tool for GPT disks
 Name:		gptfdisk
 Version:	1.0.9
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		System/Configuration/Hardware
 Url:		http://www.rodsbooks.com/gdisk
 Source0:	http://download.sourceforge.net/project/gptfdisk/gptfdisk/%{version}/%{name}-%{version}.tar.gz
-BuildRequires:	pkgconfig(icu-io)
+Patch0:		0001-Fix-failure-crash-of-sgdisk-when-compiled-with-lates.patch
+Patch1:		0002-Updated-guid.cc-to-deal-with-minor-change-in-libuuid.patch
+Patch2:		0003-Updated-URLs-in-man-pages-to-HTTPS-rather-than-HTTP.patch
 BuildRequires:	pkgconfig(ncurses)
 BuildRequires:	pkgconfig(ncursesw)
 BuildRequires:	pkgconfig(popt)
 BuildRequires:	pkgconfig(uuid)
 Provides:	gdisk = %{EVRD}
-Provides:	gdisk = 1.0.0
 Obsoletes:	gdisk < 1.0.0
 
 %description
