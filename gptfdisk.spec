@@ -35,7 +35,7 @@ and the ability to convert MBR disks to GPT format.
 
 %build
 %set_build_flags
-%make_build CC=%{__cc} CXX=%{__cxx}
+%make_build CC="%{__cc}" CXX="%{__cxx}"
 
 %install
 for f in gdisk sgdisk cgdisk fixparts ; do 
