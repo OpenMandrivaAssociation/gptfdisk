@@ -9,7 +9,7 @@ Version:	1.0.9
 Release:	4
 License:	GPLv2+
 Group:		System/Configuration/Hardware
-Url:		http://www.rodsbooks.com/gdisk
+Url:		https://www.rodsbooks.com/gdisk
 Source0:	http://download.sourceforge.net/project/gptfdisk/gptfdisk/%{version}/%{name}-%{version}.tar.gz
 Patch0:		0001-Fix-failure-crash-of-sgdisk-when-compiled-with-lates.patch
 Patch1:		0002-Updated-guid.cc-to-deal-with-minor-change-in-libuuid.patch
