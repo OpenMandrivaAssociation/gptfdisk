@@ -14,6 +14,7 @@ Source0:	http://download.sourceforge.net/project/gptfdisk/gptfdisk/%{version}/%{
 Patch0:		0001-Fix-failure-crash-of-sgdisk-when-compiled-with-lates.patch
 Patch1:		0002-Updated-guid.cc-to-deal-with-minor-change-in-libuuid.patch
 Patch2:		0003-Updated-URLs-in-man-pages-to-HTTPS-rather-than-HTTP.patch
+BuildRequires:	make
 BuildRequires:	pkgconfig(ncurses)
 BuildRequires:	pkgconfig(ncursesw)
 BuildRequires:	pkgconfig(popt)
